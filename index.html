@@ -1,250 +1,76 @@
-<!DOCTYPE html>
 <html>
-<head>
-<title>The New Girl Quiz</title>
-    
-<style>
-    
-body {
-margin: 0px;
-        
-    }
-    
-#header {
-font-family: 'Fjalla One', sans-serif;
-margin-top: 5px;
-border: 4px solid #73BFB8;
-padding: 30px;
-height: 300px;
-background-image: url("Banner.png");
-color: #2364AA;
-text-align: center;
-width: 1390px;
-height: 350px;
-overflow: hidden; 
-margin: 0 auto;
-
-        
-    }
-    
-#bio {
-background-color: #FFE66D;
-border-radius: 50px;
-height: 129px;
-margin-top: 30px;
-margin-bottom: 20px;
-        
-    }
-    
-h1 {
-font-size: 325% !important;      
-        
-    }
-    
-h2 {
-font-family: 'Comfortaa', cursive;
-color: #3DA5D9;
-        
-    }
-    
-p {
-font-family: 'Fjalla One', sans-serif; 
-font-size: 30px;
-color: #EA7317;
-
-
-    }
-
-#main {
-background-color: #FEC601 !important;  
-    
-    }
-    
-label {
-font-family: 'Comfortaa', cursive;
-color: #2364AA;
-        
-    }
-    
-button {
-background-color: #73BFB8;
-color: white;
-padding: 12px 20px;
-font-family: 'Fjalla One', sans-serif;
-font-weight: bold;
-
-    }
-
-html {
-background-color:#FEC601;
-    }
-    
-.container {
-justify-content: space-between;
-flex-direction: column;
-height: 30vh;
-display: flex;
-padding: 20px;
-        }
-    
-input {
-margin-right: 20px !important; 
-        
-    }
-    
-
-</style>
-    
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet"> 
-    
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
-    
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
-    
-<!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">       
-
-<!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    
-</head>
-<body>
-    
-    <div id="main"><!-- open main div -->
-        <div id="header"><!-- open header div -->
-            <h1>The New Girl Quiz</h1>
-        </div><!-- close header div -->
-        
-    <div id="bio">
-        <div style="position:relative; left:10px; top:10px; text-align: center;">
-        <p>How well do you know New Girl?</p>
-        </div>
-        
-        <div style="position:relative; left:10px; top:10px; text-align: center;">
-        <p>This quiz will test how much of a fan you are, or if you need to go back and watch some more New Girl.</p>
-        </div>
+    <head>
+    <div id="header">
+        <title>Sofia Aponte - Home</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kotta+One&display=swap" rel="stylesheet">
+    <!--Meta Data goes here on every page.-->
+            <meta name="description" content="Blog">
+            <meta name="keywords" content="HTML, CSS, JavaScript">
+            <meta name="author" content="Sofia Aponte">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </div>
+    </head>
+    
+    <body>
+        <!-- This code on the bottom is my navigation bar. Don't forget. -->
+        <div id="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Sofia</a></li>
+            <li><a href="art.html">Art</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </div>
         
-    
-<form id="form1" onsubmit="welcome(); return false">
-
-<div class="container">
-<h2>How many seasons of New Girl aired?</h2>
-<label for="how_string"><input type="radio" name="how" value="0" id="how_string" />9</label>
-<label for="how_join"><input type="radio" name="how" value="0" id="how_join" />8</label>
-<label for="how_info"><input type="radio" name="how" value="12.5" id="how_info" />7</label>
-<label for="how_condition"><input type="radio" name="how" value="0" id="how_condition"/>6</label>
-</div>
-                    
-<div class="container">
-<h2>Who is Jessica Day's best friend?</h2>
-<label for="jes_string"><input type="radio" name="jessica" value="0" id="jes_string"/>Schmidt</label>
-<label for="jes_join"><input type="radio" name="jessica" value="0" id="jes_join"/>Coach</label>
-<label for="jes_info"><input type="radio" name="jessica" value="0" id="jes_info" />Reagan</label>
-<label for="jes_condition"><input type="radio" name="jessica" value="12.5" id="jes_condition" />Cece</label>
-</div>  
-    
-<div class="container">   
-<h2>What actor features in the pilot, but does not arrive again until later in the show?</h2>
-<label for="but_string"><input type="radio" name="but" value="0" id="but_string" />Jake Johnson</label>
-<label for="but_join"><input type="radio" name="but" value="0" id="but_join" />Max Greenfield</label>
-<label for="but_info"><input type="radio" name="but" value="12.5" id="but_info" />Damon Wayans Jr.</label>
-<label for="but_condition"><input type="radio" name="but" value="0" id="but_condition" />Lamorne Morris</label>
-</div>  
-    
-<div class="container">
-<h2>What is the name of Winston's cat?</h2>
-<label for="cat_string"><input type="radio" name="cat" value="12.5" id="cat_string" />Ferguson</label>
-<label for="cat_join"><input type="radio" name="cat" value="0" id="cat_join" />Einstein</label>
-<label for="cat_info"><input type="radio" name="cat" value="0" id="cat_info" />Mr. Cat</label>
-<label for="cat_condition"><input type="radio" name="cat"  value="0" id="cat_condition" />Furry</label>
-</div>
-    
-<div class="container">
-<h2>What celebrity pops up in season 2's finale, "Elaine's Big Day," where Cece intends to marry Shivrang?</h2>
-<label for="wha_string"><input type="radio" name="what" value="0" id="wha_string" />Prince</label>
-<label for="wha_join"><input type="radio" name="what" value="0" id="wha_join" />Kelsea Ballerini</label>
-<label for="wha_info"><input type="radio" name="what" value="12.5" id="wha_info" />Taylor Swift</label>
-<label for="wha_condition"><input type="radio" name="what"  value="0" id="wha_condition" />Carry Underwood</label>
-</div>
-     
-<div class="container">
-<h2>Which loft in their apartment building do the new girl characters live in?</h2>
-<label for="whi_string"><input type="radio" name="which" value="0" id="whi_string" />7C</label>
-<label for="whi_join"><input type="radio" name="which" value="0" id="whi_join" />7D</label>
-<label for="whi_info"><input type="radio" name="which" value="0" id="whi_info" />4C</label>
-<label for="whi_condition"><input type="radio" name="which"  value="12.5" id="whi_condition" />4D</label>
-</div>
-   
-<div class="container">
-<h2>What is the most amount of people who have lived at the loft at once?</h2>
-<label for="mos_string"><input type="radio" name="most" value="0" id="mos_string" />4</label>
-<label for="mos_join"><input type="radio" name="most" value="0" id="mos_join" />3</label>
-<label for="mos_info"><input type="radio" name="most" value="0" id="mos_info" />7</label>
-<label for="mos_condition"><input type="radio" name="most"  value="12.5" id="mos_condition" />6</label>
-</div>
-   
-<div class="container">    
-<h2>Who does Winston end up with at the end of the show?</h2>
-<label for="who_string"><input type="radio" name="who" value="0" id="who_string" />Jessica</label>
-<label for="who_join"><input type="radio" name="who" value="0" id="who_join" />Rhonda</label>
-<label for="who_info"><input type="radio" name="who" value="12.5" id="who_info" />Aly</label>
-<label for="who_condition"><input type="radio" name="who"  value="0" id="who_condition" />Cece</label>
-</div>
-    
-
-<button type="submit" value="Submit">Submit</button>
-       
-
-</form>
         
-        <p>Your grade is: <span id="grade">__</span></p>
-        <p id="grade2"></p>
-    </div><!-- close main div -->
-    
-    <script>
-        document.getElementById("form1").onsubmit=function() {
-       how = parseFloat(document.querySelector('input[name = "how"]:checked').value);
-	   jessica = parseFloat(document.querySelector('input[name = "jessica"]:checked').value);
-	   but = parseFloat(document.querySelector('input[name = "but"]:checked').value);
-	   cat = parseFloat(document.querySelector('input[name = "cat"]:checked').value);
-        what = parseFloat(document.querySelector('input[name = "what"]:checked').value);
-        which = parseFloat(document.querySelector('input[name = "which"]:checked').value);
-        most = parseFloat(document.querySelector('input[name = "most"]:checked').value);
-        who = parseFloat(document.querySelector('input[name = "who"]:checked').value);
-    
-	   result = how + jessica + but + cat + what + which + most + who;
-
-	document.getElementById("grade").innerHTML = result;
-
-if (result == 0) {result2 = "You've never watched New Girl before. Have you.<br /><img src='winston.jpeg' width='500'/>"};
-if (result == 12.5) {result2 = "Barely, that was sad.<br /><img src='nick.jpeg' width='500'/>"};
-if (result == 25) {result2 = "Rough. Do you even know that Jessica Day is the main character?<br /><img src='jess.jpeg' width='500'/>"};
-if (result == 37.5) {result2 = "Ferguson would be ashamed of you.<br /><img src='ferg.jpeg' width='500'/>"};
-if (result == 50) {result2 = "Well, maybe you've only watched the show once. or you have only watched half of it? Not sure how that works. I'm just here to scold you.<br /><img src='jessica.webp' width='500'/>"};
-if (result == 62.5) {result2 = "You're getting there. You definitely need to brush up on New Girl.<br /><img src='schmidt.webp' width='500'/>"};
-if (result == 75) {result2 = "You are still a ways away from being a super fan but if you rewatch New Girl you will be on the right track!<br /><img src='gang.jpeg' width='500'/>"};
-if (result == 87.5) {result2 = "Nice job, not quite, but I can tell you are definitely a fan of New Girl!<br /><img src='fun.png' width='500'/>"};
-if (result == 100) {result2 = "Amazing! You're definitely a New Girl super fan! Now go reward yourself by watching some more New Girl.<br /><img src='good.jpeg' width='500'/>"};
+        <div id="section">
+            <img src="profilephoto.jpg" width="50%" align="left">
+        <h1>Hello there, wanderer...</h1>
+        <p>Thanks for visiting my site! I currently attend school at <a href="https://www.txstate.edu">Texas State University</a></p>
+        
+         <p>My name is Sofia, and I grew up with five brothers who did not show me much in the ways of femininity, but did inspire creativity and my love for artistry. Everyone has an understanding of what they feel to be art, and what they feel to be a great song, for one thing. I love to paint- it is my outlet and my happy place. But music is something I could never live without. No matter what you are feeling, hearing the right words can change things in an instant.</p>
             
-document.getElementById("grade2").innerHTML = result2;
-
-
-            return false; // required to not refresh the page; just leave this here
-        } //this ends the submit function 
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
         
-    </script>
-
-<!-- Option 1: Bootstrap Bundle with Popper- at the end of script -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-
+        </div>
         
-</body>
+        <button>Ask Sofia</button>
+              
+                
+        <h2>This is my main page!</h2>
+            
+        
+        <div id="footer">
+            <ul>
+            
+            <li><p>Sofia Aponte</p></li>
+            <li><p><a href="tel: ##########">###-###-####</a></p></li>
+            <li><p><a href="social media">Insta: @sofia.aponte2</a></p></li>
+            <li><p><a href="email address">apontsof@gmail.com</a></p></li>
+            
+            </ul>
+        
+        
+        </div>
+    
+    
+    
+
+    
+    
+    </body>
+
+
+
+
+
+
+
 </html>
